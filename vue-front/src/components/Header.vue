@@ -2,11 +2,11 @@
 b-container#head-nav(fluid)
     b-navbar(toggleable="sm")
         b-navbar-toggle(target="nav-text-collapse")
-        b-navbar-brand 
+        b-navbar-brand
             img(src="../assets/img/logo.png")
             router-link(to="/" tag="h2") Adoptme.Org
-        b-collapse(id="nav-text-collapse" align="end" is-nav)
-            b-navbar-nav(align="end" small=true)
+        b-collapse(id="nav-text-collapse" is-nav)
+            b-navbar-nav
                 b-nav-item(to="/what-we-do") 
                     h1 WHAT we do
                 b-nav-item(to="/who-we-are") 
@@ -39,5 +39,7 @@ export default {
     .navbar-brand
         display: flex
         flex-flow: row
-
+#nav-text-collapse
+    position: absolute
+    right: 2%
 </style>
