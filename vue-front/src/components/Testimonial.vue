@@ -1,9 +1,9 @@
 <template lang="pug">
   b-container#testimonial(fluid)
     div(v-if="video")
-        h1 {{JSON.stringify(video)}}
+        div(:innerHTML="video.html")
     div(v-if="!video")
-        h1 {{this.videoApi}}
+        img(src="@/assets/img/testimonial.jpg")
 </template>
 
 <script>

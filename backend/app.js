@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const port = 8080
 const youtubeJsonPackage = {
@@ -17,7 +18,7 @@ const youtubeJsonPackage = {
     "thumbnail_width": 480
   }
 
-
+app.use(cors())
+app.options('*', cors())
 app.get('/', (req, res) => res.send(youtubeJsonPackage))
-
 app.listen(port, () => console.log(`dummy backend running at http://localhost:${port}`))

@@ -1,8 +1,8 @@
 <template lang="pug">
-  b-container(fluid)
+  b-container#home(fluid)
     b-row
       banner
-    b-row
+    b-row#post-banner
       b-col(sm="4")
         volunteer
       b-col(sm="8")
@@ -32,6 +32,4 @@ export default {
 };
 </script>
 <style lang="sass">
-div.home
-  background: white
 </style>

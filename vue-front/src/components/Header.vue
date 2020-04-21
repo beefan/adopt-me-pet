@@ -6,7 +6,7 @@ b-container#head-nav(fluid)
             img(src="../assets/img/logo.png")
             router-link(to="/" tag="h2") Adoptme.Org
         b-collapse(id="nav-text-collapse" align="end" is-nav)
-            b-navbar-nav(align="end" small="true")
+            b-navbar-nav(align="end" small=true)
                 b-nav-item(to="/what-we-do") 
                     h1 WHAT we do
                 b-nav-item(to="/who-we-are") 
