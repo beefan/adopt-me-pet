@@ -67,8 +67,37 @@ p {
     }
 }
 
-#header-info {
-    background-color: $color-gray;
+#testimonial-header, #volunteer-header {
+    background-color: $color-red;
+    color: white;
+    padding: 2%;
+    font-family: $font-family-primary;
+    font-weight: bolder;
+    font-size: .8rem;
+    width: 100%;
+}
+#volunteer-header {
+    background-color: $color-blue;
+    padding: 4%;
+}
+
+#volunteer-container p {
+    color: $color-gray;
+}
+
+#volunteer-card-btn {
+    border: 2px solid $color-blue;
+    background: transparent;
+    border-radius: 0px;
+    margin-bottom: 8%;
+    min-width: 15%;
+    color: $color-blue;
+    font-size: .8rem;
+    font-weight: bolder;
+}
+#volunteer-card-btn:hover{
+    background-color: $color-blue;
+    color: white;
 }
 
 #footer {

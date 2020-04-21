@@ -28,7 +28,7 @@ export default {
     margin-top: 20%
     background: rgba(0, 0, 0, 0.3)
     .row
-        margin-left: 5%
+        margin-left: 8%
         opacity: none
     h2
         color: white

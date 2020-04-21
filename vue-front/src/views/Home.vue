@@ -3,15 +3,15 @@
     b-row
       banner
     b-row#post-banner
-      b-col(sm="4")
-        volunteer
+      b-col.flex-grow-1(sm="4" style="display: flex; flex-flow: column")
+        volunteer.flex-grow-1(style="display: flex; flex-flow: column")
       b-col(sm="8")
         testimonial
-    b-row
+    b-row#last-row
       b-col(sm="8")
         list-widget
       b-col(sm="4")
-        img(src="@/assets/img/friend-in-trouble.png")
+        img(src="@/assets/img/adopt-me-dog.png")
 </template>
 
 <script>
@@ -32,4 +32,12 @@ export default {
 };
 </script>
 <style lang="sass">
+#post-banner, #last-row
+  margin-top: 3%
+  margin-left: 5%
+  margin-right: 5%
+  display: flex
+#last-row
+  img 
+    width: 100%
 </style>

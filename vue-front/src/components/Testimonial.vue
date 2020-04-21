@@ -1,9 +1,8 @@
 <template lang="pug">
-  b-container#testimonial(fluid)
-    div(v-if="video")
-        div(:innerHTML="video.html")
-    div(v-if="!video")
-        img(src="@/assets/img/testimonial.jpg")
+div 
+    header#testimonial-header TESTIMONIAL OF THE MONTH
+    div#testimonial
+        img(v-if="!video" src="@/assets/img/testimonial.jpg")
 </template>
 
 <script>
@@ -11,7 +10,7 @@ export default {
   data() {
     return {
       videoApi: process.env.VUE_APP_VIDEO_API_URL,
-      video: {}
+      video: null
     };
   },
   methods: {
@@ -23,17 +22,24 @@ export default {
         .then(data => {
           console.log(data);
           this.video = data;
+          this.insertIFrame(this.video.html);
         })
         .catch(err => {
           console.error(err);
         });
+    },
+    insertIFrame(html) {
+        document.getElementById('testimonial').innerHTML = html;
     }
   },
   created() {
-    this.video = this.getVideoJSON();
+    //this.video = this.getVideoJSON();
   }
 };
 </script>
 
-<style>
+<style lang="sass">
+#testimonial
+    img 
+        width: 100%
 </style>
