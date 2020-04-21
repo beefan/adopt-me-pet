@@ -5,8 +5,8 @@
     div#header-info
         b-row
             h2 This is your new family!
-            button 
-                router-link(to="/events") Adopt Now
+            router-link(to="/events")
+                b-button(v-b-tooltip.hover title="Expand your family at an upcoming adoption event!") Adopt Now
         b-row#filler
 </template>
 

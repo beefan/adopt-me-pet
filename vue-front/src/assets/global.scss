@@ -13,14 +13,50 @@ $font-size-h2: 20px;
 $font-family-h2: $font-family-secondary;
 $font-weight-h2: bold;
 
-/**Global background color*/
+/**Global background color**/
 html {
     background-color: white;
+    width: 100%;
+}
+
+/**Global font settings**/
+h1 {
+    font-size: $font-size-h1;
+    font-family: $font-family-h1;
+    font-weight: $font-weight-h1;
+}
+h2 {
+    font-size: $font-size-h2;
+    font-family: $font-family-h2;
+    font-weight: $font-weight-h2;
+}
+p {
+    font-size: $font-size-h2;
+    font-family: $font-family-h1;
+    font-size: .85rem;
 }
 
 /**Header Component**/
-.navbar {
-    background-color: $color-red
+#head-nav {
+    background-color: $color-red;
+    .navbar-brand a
+    {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#footer {
+    background-color: $color-blue;
+    border-top: 2px solid $color-red;
+}
+
+#app {
+    .container-fluid, .container-xl, .container-lg, .container-md, .container-sm 
+    {
+            padding:0;
+            margin: 0;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@400;700&display=swap');
