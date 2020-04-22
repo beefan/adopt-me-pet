@@ -6,7 +6,7 @@ b-container#head-nav(fluid)
             img(src="../assets/img/logo.png")
             router-link(to="/" tag="h2") Adoptme.Org
         b-collapse(id="nav-text-collapse" is-nav)
-            b-navbar-nav
+            b-navbar-nav.ml-auto
                 b-nav-item(to="/what-we-do") 
                     h1 WHAT we do
                 b-nav-item(to="/who-we-are") 
@@ -35,13 +35,8 @@ export default {};
         color: white
         font-size: .9rem
         font-weight: bolder
-
     .navbar-brand
         display: flex
         flex-flow: row
-#nav-text-collapse
-    position: absolute
-    right: 2%
-    .nav-item:hover
-        opacity: 70%
+
 </style>

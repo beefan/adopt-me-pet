@@ -4,9 +4,9 @@
       banner
     b-row#post-banner
       b-col.flex-grow-1(sm="4" style="display: flex; flex-flow: column")
-        volunteer.flex-grow-1(style="display: flex; flex-flow: column")
+        volunteer
       b-col.flex-grow-1(sm="8")
-        testimonial.flex-grow-1(style="display: flex; flex-flow: column")
+        testimonial
     b-row#last-row
       b-col(sm="8")
         list-widget
