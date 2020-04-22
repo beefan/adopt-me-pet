@@ -29,7 +29,7 @@ export default {};
     h2
         color: white
         font-size: 1.5rem
-    h2:hover
+    h2:hover, .nav-item:hover
         opacity: 60%
     h1
         color: white
