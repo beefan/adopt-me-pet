@@ -31,7 +31,9 @@ export default {
     insertIFrame(html) {
       let testimonial = document.getElementById("testimonial");
       testimonial.innerHTML = html;
-      testimonial.querySelector("iframe").classList.add("embed-responsive-item");
+      testimonial
+        .querySelector("iframe")
+        .classList.add("embed-responsive-item");
     }
   },
   created() {
@@ -40,5 +42,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

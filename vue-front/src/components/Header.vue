@@ -38,5 +38,4 @@ export default {};
     .navbar-brand
         display: flex
         flex-flow: row
-
 </style>
