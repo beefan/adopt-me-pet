@@ -20,7 +20,6 @@ export default {
           return response.json();
         })
         .then(data => {
-          console.log(data);
           this.video = data;
           this.insertIFrame(this.video.html);
         })

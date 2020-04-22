@@ -5,13 +5,58 @@
       b-col(lg="4")
         b-img(src="https://placekitten.com/400/500")
       b-col(lg="8")
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Fusce ut placerat orci nulla pellentesque dignissim enim. Ante in nibh mauris cursus mattis molestie a iaculis. 
-        p Natoque penatibus et magnis dis. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Enim ut sem viverra aliquet eget sit amet. Sed risus pretium quam vulputate dignissim. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Nulla facilisi cras fermentum odio. Viverra aliquet eget sit amet tellus cras adipiscing enim. 
-        p Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Cursus mattis molestie a iaculis at erat. Ultrices gravida dictum fusce ut placerat orci. Tempus egestas sed sed risus pretium quam. Elementum sagittis vitae et leo duis ut. Et leo duis ut diam quam. Varius morbi enim nunc faucibus a pellentesque sit. Viverra nam libero justo laoreet sit amet cursus sit. Elementum pulvinar etiam non quam lacus. Phasellus vestibulum lorem sed risus. 
-        p Dolor magna eget est lorem ipsum. Integer quis auctor elit sed vulputate mi sit. Amet volutpat consequat mauris nunc congue nisi vitae. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Morbi quis commodo odio aenean. Vehicula ipsum a arcu cursus vitae. Pretium vulputate sapien nec sagittis aliquam malesuada.
+        p Dog Breeds, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Fusce ut placerat orci nulla pellentesque dignissim enim. Ante in nibh mauris cursus mattis molestie a iaculis. 
+        b-table(striped hover :items="items" :fields="fields")
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      dogDataApi: 'https://dog.ceo/api/breeds/list/all',
+      fields: [
+        {
+          key: "breed_name",
+          label: "Breed",
+          sortable: true
+        },
+        {
+          key: "num_sub_breeds",
+          label: "# of sub breeds",
+          sortable: true
+        }
+      ],
+      items: [
+        { breed_name: "ex", num_sub_breeds: 3},
+        { breed_name: "ex", num_sub_breeds: 3}
+      ]
+    };
+  },
+  methods: {
+    getDogBreedData() {
+      fetch(this.dogDataApi)
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+          this.setTableItemsFromDogData(data);
+        })
+        .catch(err => {
+          console.error(err);
+        });
+    },
+    setTableItemsFromDogData(data) {
+      this.items = []
+      Object.keys(data.message).forEach( (key) => {
+        let name = key.substring(0,1).toUpperCase() + key.substring(1);
+        this.items.push({breed_name: name, num_sub_breeds: data.message[key].length});
+      });
+    }
+  },
+  created() {
+    this.getDogBreedData();
+  }
+};
 </script>
 <style lang="sass">
 #what
