@@ -1,7 +1,7 @@
 <template lang="pug">
 div
     header#testimonial-header TESTIMONIAL OF THE MONTH
-    div#testimonial
+    div#testimonial(style="--aspect-ratio: 16/9;")
         img(v-if="!video" src="@/assets/img/testimonial.jpg")
 </template>
 
@@ -38,12 +38,27 @@ export default {
 };
 </script>
 
-<style lang="sass">
-#testimonial
-  img
-    width: 100%
-    iframe
-      width: 100%
-      height: 400px
-      margin-bottom: 0
+<style>
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
 </style>
