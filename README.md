@@ -2,7 +2,7 @@
 ## Digital Transformation Example
 
 ## Project setup
-The backend of this project is a simple, one file node server created using express. All it does is send the json of a youtube video upon request. Setup:
+The backend of this project is a simple, one file node server created using express. All it does is send the json of a youtube video upon request. To set it up:
 ```
 cd backend
 npm install
@@ -29,11 +29,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
