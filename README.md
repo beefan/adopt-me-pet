@@ -1,6 +1,6 @@
 # pet adoption site
 ## Digital Transformation Example
-Pet Adoption Agency website. Built on vue.js, node, and bootstrap-vue. The site consists of several article style pages, a home page with video content, a basic article feed, and a large picture banner. 
+Pet Adoption Agency website. Built on vue.js, node, and bootstrap-vue. The site consists of several article style pages, a responsive data table populated with data from dog.ceo, a home page with video content, a basic article feed, and a large picture banner. 
 
 ![pet-adoption-app-screenshot](./screenshot.png)
 
