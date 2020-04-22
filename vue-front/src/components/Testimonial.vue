@@ -1,7 +1,7 @@
 <template lang="pug">
 div
     header#testimonial-header TESTIMONIAL OF THE MONTH
-    div#testimonial(style="--aspect-ratio: 16/9;")
+    div#testimonial.embed-responsive.embed-responsive-16by9
         img(v-if="!video" src="@/assets/img/testimonial.jpg")
 </template>
 
@@ -29,7 +29,9 @@ export default {
         });
     },
     insertIFrame(html) {
-      document.getElementById("testimonial").innerHTML = html;
+      let testimonial = document.getElementById("testimonial");
+      testimonial.innerHTML = html;
+      testimonial.querySelector("iframe").classList.add("embed-responsive-item");
     }
   },
   created() {
@@ -39,26 +41,4 @@ export default {
 </script>
 
 <style>
-[style*="--aspect-ratio"] > :first-child {
-  width: 100%;
-}
-[style*="--aspect-ratio"] > img {  
-  height: auto;
-} 
-@supports (--custom:property) {
-  [style*="--aspect-ratio"] {
-    position: relative;
-  }
-  [style*="--aspect-ratio"]::before {
-    content: "";
-    display: block;
-    padding-bottom: calc(100% / (var(--aspect-ratio)));
-  }  
-  [style*="--aspect-ratio"] > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }  
-}
 </style>
