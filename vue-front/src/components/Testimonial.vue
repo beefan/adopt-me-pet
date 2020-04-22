@@ -1,5 +1,5 @@
 <template lang="pug">
-div 
+div
     header#testimonial-header TESTIMONIAL OF THE MONTH
     div#testimonial
         img(v-if="!video" src="@/assets/img/testimonial.jpg")
@@ -33,7 +33,7 @@ export default {
     }
   },
   created() {
-    //this.video = this.getVideoJSON();
+    this.video = this.getVideoJSON();
   }
 };
 </script>
@@ -41,5 +41,9 @@ export default {
 <style lang="sass">
 #testimonial
     img 
-        width: 100%
+      width: 100%
+    iframe
+      width: 100%
+      height: 400px
+      margin-bottom: 0
 </style>
