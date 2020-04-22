@@ -1,5 +1,5 @@
 <template lang="pug">
-    b-row#program-view
+    b-container#program-view
         h1 {{ program.name }}
         b-row
             b-col(md="4")
@@ -32,26 +32,24 @@ export default {
     p
         margin-top: 3%
 #program-view
-    margin: 10%
-    box-shadow: 2px 2px 5px grey, -2px -2px 10px #A9A9A9
-    .row
-        display: flex
-        flex-flow: row
-        flex-wrap: wrap
-        justify-content: space-between
-    h1
-        font-size: 1.5rem
-        text-align: center
-        font-weight: bolder
-        color: white
-        width: 100%
-        padding: 5%
-    img
-        width: 100%
-        margin-left: 8%
-        margin-right: 5%
-        margin-bottom: 5%
-    p
-        margin-left: 8%
-        margin-right: 8%
+  margin: 0
+  padding: 0
+  margin-top: 10vw
+  margin-bottom: 5%
+  margin-left: auto
+  margin-right: auto
+  box-shadow: 2px 2px 5px grey, -2px -2px 10px #A9A9A9
+  h1
+    font-size: 1.5rem
+    text-align: center
+    font-weight: bolder
+    color: white
+    width: 100%
+    padding: 10%
+  img
+    width: 100%
+    border-radius: 5px
+    padding: 3%
+  p
+    padding: 3%
 </style>
