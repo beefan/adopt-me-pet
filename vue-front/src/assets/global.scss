@@ -100,6 +100,24 @@ p {
     color: white;
 }
 
+#list-header .select-tab {
+    color: $color-blue;
+    border-bottom: 2px solid $color-blue;
+    font-size: .9rem;
+    font-weight: bolder;
+    padding: 2%;
+    font-family: $font-family-primary;
+}
+
+#list-header .unselect-tab {
+    color: $color-gray;
+    border: none;
+    font-size: .9rem;
+    font-weight: bolder;
+    padding: 2%;
+    font-family: $font-family-primary;
+}
+
 #footer {
     background-color: $color-blue;
     border-top: 2px solid $color-red;

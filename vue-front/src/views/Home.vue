@@ -38,6 +38,7 @@ export default {
   margin-right: 5%
   display: flex
 #last-row
+  margin-bottom: 3%
   img 
     width: 100%
 </style>
