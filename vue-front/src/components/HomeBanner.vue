@@ -9,13 +9,11 @@
             b-button#adopt-button(v-b-tooltip.hover.right to="/events" title="Expand your family at an upcoming adoption event!") 
                 h1 ADOPT NOW
 </template>
-
 <script>
 export default {
 
 }
 </script>
-
 <style lang="sass">
 #home-banner-container
     background: black

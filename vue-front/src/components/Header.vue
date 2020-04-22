@@ -32,14 +32,19 @@ export default {
     h2
         color: white
         font-size: 1.5rem
+    h2:hover
+        opacity: 60%
     h1
         color: white
         font-size: .9rem
         font-weight: bolder
+
     .navbar-brand
         display: flex
         flex-flow: row
 #nav-text-collapse
     position: absolute
     right: 2%
+    .nav-item:hover
+        opacity: 70%
 </style>
