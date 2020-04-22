@@ -25,7 +25,7 @@ export default {};
     color: white
     width: 100%
     padding: 5%
-  img 
+  img
     margin-left: 8%
     margin-right: 5%
     margin-bottom: 5%

@@ -66,13 +66,6 @@ export default {
       } else if (event.target.id === "lhc" && this.selectedTab != "companies") {
         this.selectedTab = "companies";
       }
-    },
-    getPicUrl(url) {
-        if (url.substring(0, 3) === '../'){
-            return require(url)
-        }else {
-            return url
-        }
     }
   }
 };
@@ -80,11 +73,11 @@ export default {
 
 <style lang="sass">
 #list-container
-    width: 100%
+  width: 100%
 #list-header
-    display: flex
-    flex-flow: row
+  display: flex
+  flex-flow: row
 .unselect-tab:hover
-    background-color: rgba(0,0, 255, 0.2)
-    color: white
+  background-color: rgba(0,0, 255, 0.2)
+  color: white
 </style>

@@ -22,13 +22,9 @@
             p#license Some images were taken from unsplash.com
     
 </template>
-
 <script>
-export default {
-
-}
+export default {};
 </script>
-
 <style lang="sass">
 #footer.container
     position: absolute
@@ -37,10 +33,10 @@ export default {
     left: 0
     padding: 3%
     max-width: 120%
-    img 
+    img
         width: 17%
         margin: 2%
-    p 
+    p
         color: white
         font-size: .8rem
         line-height: .4rem
@@ -55,9 +51,9 @@ export default {
         margin-top: 5%
         margin-bottom: 0
         font-size: .7rem
-    .row 
+    .row
         margin-left: 10%
-        .col 
+        .col
             flex-wrap: wrap
     .navbar-nav
         flex-flow: row
@@ -68,5 +64,4 @@ export default {
     display: flex
     flex-flex: row
     margin-bottom: 3%
-    
 </style>

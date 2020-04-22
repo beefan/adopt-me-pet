@@ -29,7 +29,7 @@ export default {
         });
     },
     insertIFrame(html) {
-        document.getElementById('testimonial').innerHTML = html;
+      document.getElementById("testimonial").innerHTML = html;
     }
   },
   created() {
@@ -40,8 +40,8 @@ export default {
 
 <style lang="sass">
 #testimonial
-    img 
-      width: 100%
+  img
+    width: 100%
     iframe
       width: 100%
       height: 400px

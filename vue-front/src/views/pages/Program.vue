@@ -18,9 +18,9 @@ export default {
     program: Object
   },
   created() {
-      if (!this.program) {
-          this.$router.push({ path: '/' })
-      }
+    if (!this.program) {
+      this.$router.push({ path: "/" });
+    }
   }
 };
 </script>
@@ -29,7 +29,7 @@ export default {
     border-top: 2px solid black
     margin-left: 8%
     margin-right: 8%
-    p 
+    p
         margin-top: 3%
 #program-view
     margin: 10%

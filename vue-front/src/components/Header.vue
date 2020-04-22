@@ -15,18 +15,15 @@ b-container#head-nav(fluid)
                     h1 EVENTS adoption
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
-
 <style lang="sass">
 #head-nav
     position: fixed
     left: 0px
     top: 0px
     z-index: 9
-    img 
+    img
         width: 17%
         margin: 2%
     h2

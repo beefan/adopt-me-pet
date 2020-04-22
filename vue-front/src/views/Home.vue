@@ -24,10 +24,10 @@ import ListWidget from "@/components/ListWidget.vue";
 export default {
   name: "Home",
   components: {
-    'banner': HomeBanner,
-    'volunteer': Volunteer,
-    'testimonial': Testimonial,
-    'list-widget': ListWidget
+    banner: HomeBanner,
+    volunteer: Volunteer,
+    testimonial: Testimonial,
+    "list-widget": ListWidget
   }
 };
 </script>
@@ -39,6 +39,6 @@ export default {
   display: flex
 #last-row
   margin-bottom: 3%
-  img 
+  img
     width: 100%
 </style>

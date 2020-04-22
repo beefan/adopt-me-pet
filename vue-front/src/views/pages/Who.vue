@@ -24,8 +24,8 @@ export default {};
     font-weight: bolder
     color: white
     width: 100%
-    padding: 5% 
-  img 
+    padding: 5%
+  img
     margin-left: 8%
     margin-right: 5%
     margin-bottom: 5%

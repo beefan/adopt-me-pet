@@ -8,15 +8,13 @@ div#volunteer-box-shadow.flex-grow-1
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style lang="sass">
 #volunteer-container
     width: 100%
-    padding:0px
+    padding: 0px
     img
         width: 100%
     p, button

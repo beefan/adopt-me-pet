@@ -10,9 +10,7 @@
                 h1 ADOPT NOW
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
 <style lang="sass">
 #home-banner-container
@@ -41,7 +39,7 @@ export default {
     border-radius: 0px
     margin-bottom: 5%
     min-width: 15%
-    h1 
+    h1
         font-size: .7rem
         font-weight: bold
         text-align: left
