@@ -1,5 +1,8 @@
 # pet adoption site
 ## Digital Transformation Example
+Pet Adoption Agency website. Built on vue.js, node, and bootstrap-vue. The site consists of several article style pages, a home page with video content, a basic article feed, and a large picture banner. 
+
+![pet-adoption-app-screenshot](./screenshot.png)
 
 ## Project setup
 The backend of this project is a simple, one file node server created using express. All it does is send the json of a youtube video upon request. To set it up:
