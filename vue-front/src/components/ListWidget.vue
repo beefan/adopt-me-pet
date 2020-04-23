@@ -38,7 +38,7 @@ export default {
         },
         {
           name: "My Next Family",
-          logoUrl: "http://placekitten.com/300/300",
+          logoUrl: require("../assets/img/peach.png"),
           desc:
             "Are you looking for a new family member? Then, this program is for you. Don't buy, adopt here, and let's give a home to these amazing friends!"
         }
@@ -52,7 +52,7 @@ export default {
         },
         {
           name: "Foster Friends",
-          logoUrl: "http://placekitten.com/300/300",
+          logoUrl: require("../assets/img/peach2.png"),
           desc:
             "A non-profit organization that helps to pair animal up for adoption with the right foster homes while they wait."
         }
